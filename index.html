@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  
+  <div id="logo">
+    <img src="logo.svg" alt="">
+  </div>
+  <div id="list-container">
+    
+    <ul id="list-items">
+      
+      <div class="dropdown">
+        <button id="features-btn">Features <img id="arrow" src="icon-arrow-down.svg"></button>
+      <div id="mydropdown" class="dropdown-content">
+        <a href="#"><img src="icon-todo.svg" alt=""> Todo list</a>
+        <a href="#"><img src="icon-calendar.svg" alt=""> Calender</a>
+        <a href="#"><img src="icon-reminders.svg" alt="">  Reminders</a>
+        <a href="#"><img src="icon-planning.svg" alt="">  Planning</a>
+      </div>
+      </div>
+      
+      <div>
+        <button id="company-btn">Company <img id="arrow" src="icon-arrow-down.svg"></button>
+        <div id="secondDropdown" class="dropdown-content">
+          <a href="">History</a>
+          <a href="">Our Team</a>
+          <a href="">Blog</a>
+        </div>
+
+        
+      </div>
+      
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+
+
+
+    <div class="btn-container">
+      <button id="login-btn">Login</button>
+      <button id="register-btn">Register</button>
+    </div>
+    <a href="#" class="icon" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  </div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="sidedrop">
+      <a  id="features-side" onclick="sidedrop()">Features <img id="arrow" src="icon-arrow-down.svg"></a>
+      <div id="sidedropdown" class="sidedrop-content">
+        <a href="#"><img src="icon-todo.svg" alt=""> Todo list</a>
+        <a href="#"><img src="icon-calendar.svg" alt=""> Calender</a>
+        <a href="#"><img src="icon-reminders.svg" alt="">  Reminders</a>
+        <a href="#"><img src="icon-planning.svg" alt="">  Planning</a>
+      </div>
+    </div>
+    
+    <div class="sidedrop">
+      <a href="#" id="" onclick="sidedrop2()">Company <img id="arrow" src="icon-arrow-down.svg"></a>
+      <div id="sidedropdown-2" class="sidedrop-content">
+        <a href="">History</a>
+          <a href="">Our Team</a>
+          <a href="">Blog</a>
+      </div>
+    </div>
+    
+    <a href="#">Careers</a>
+    <a href="#">About</a>
+  </div>
+</header>
+
+ <main class="main-container">
+<div class="left-main">
+  <h1>Make remote work</h1>
+  <p>Get your team in sync, no matter your location. <br> Streamline processes,create team rituals, and <br> watch productivity soar.</p>
+
+  <button id="learn-btn" >Learn more</button>
+  <div class="img-items">
+    <img src="client-databiz.svg" alt="">
+    <img src="client-audiophile.svg" alt="">
+    <img src="client-meet.svg" alt="">
+    <img src="client-maker.svg" alt="">
+  </div>
+
+  
+</div>
+<img  id="hero-image" src="image-hero-desktop.png" alt="">
+ </main>
+  
+
+ <script src="app.js"></script>
+</body>
+</html>
