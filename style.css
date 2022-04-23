@@ -310,8 +310,8 @@ p {
 
      #hero-image {
          width: 400px;
-        
-         border: solid;
+        margin: 20px;
+         
          
      }
 
@@ -339,7 +339,7 @@ p {
 
      .img-items img{
         width: 45px;
-       
+       margin-left: 20px;
         
         
     }
