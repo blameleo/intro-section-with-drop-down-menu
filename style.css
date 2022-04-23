@@ -303,11 +303,14 @@ p {
          display: inline-block;
          white-space: nowrap;
          clear: both;
-         font-size: 50px;
+         font-size: 35px;
+         width: fit-content;
+         
      }
 
      #hero-image {
-         
+         width: fit-content;
+        
          
          margin-left: 40px;
      }
@@ -319,11 +322,26 @@ p {
          justify-content: center;
      }
 
+     p {
+         
+         width: fit-content;
+         font-size: 15px;
+     }
+
      .img-items {
          display: flex;
          
-         margin-left: 20px;
+         justify-content: center;
+         align-items: center;
+        
          
      }
+
+     .img-items img{
+        width: 45px;
+       
+        
+        
+    }
 
 }
